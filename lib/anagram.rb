@@ -13,9 +13,10 @@ class Anagram
     possible_anagrams.each do |anagram|
       anagram_sorted = anagram.split("").sort
       if word_letters == anagram_sorted
-        anagram
+      matches << anagram
       end
     end
+    matches
   end
 
 
