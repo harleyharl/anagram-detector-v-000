@@ -15,6 +15,7 @@ class Anagram
     if word_letters == anagram_sorted
       anagram
     end
+    end 
   end
 
 
