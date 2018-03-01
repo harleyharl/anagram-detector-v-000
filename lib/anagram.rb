@@ -10,7 +10,10 @@ class Anagram
   def match(possible_anagrams)
     matches = []
     word_letters = word.split("").sort
-    matches << possible_anagrams.each do |anagram| anagram.split("").sort
+    possible_anagrams.each do |anagram|
+      anagram_sorted = anagram.split("").sort
+    if word_letters == anagram_sorted
+      anagram
     end
   end
 
