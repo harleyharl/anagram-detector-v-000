@@ -12,10 +12,10 @@ class Anagram
     word_letters = word.split("").sort
     possible_anagrams.each do |anagram|
       anagram_sorted = anagram.split("").sort
-    if word_letters == anagram_sorted
-      anagram
+      if word_letters == anagram_sorted
+        anagram
+      end
     end
-    end 
   end
 
 
